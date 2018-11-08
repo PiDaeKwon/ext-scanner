@@ -18,17 +18,15 @@ def title():
     print(title)
 
 def get_args():
-    """
-    Parses user flags passed to TorBot
-    """
+    
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--version",
                         action="store_true",
-                        help="Show current version of DLMSender.")
+                        help="Show current version of ext scanner.")
     parser.add_argument("-q", "--quiet",
                         action="store_true")
     parser.add_argument("-d", "--directory", required=True,
-                        help="Enter the port to connect to. (ex. COM9, /dev/ttyUSB0)")
+                        help="Enter the path to search.")
 
     return parser.parse_args()
 
