@@ -66,6 +66,6 @@ if __name__ == '__main__':
         for i in range(len(notsupport_ext)):
             print("\t" + notsupport_ext[i])
 
-
+ 
     except KeyboardInterrupt:
         print("Interrupt received! Exiting cleanly...")
