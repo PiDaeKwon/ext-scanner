@@ -25,7 +25,7 @@ def get_args():
                         help="Show current version of ext scanner.")
     parser.add_argument("-q", "--quiet",
                         action="store_true")
-    parser.add_argument("-d", "--directory", required=True,
+    parser.add_argument("-d", "--directory",
                         help="Enter the path to search.")
 
     return parser.parse_args()
